@@ -7,6 +7,8 @@ caarlos0/zsh-git-sync kind:path
 caarlos0/zsh-mkc
 caarlos0/zsh-open-pr kind:path
 mafredri/zsh-async
+robbyrussell/oh-my-zsh folder:plugins/git
+robbyrussell/oh-my-zsh folder:plugins/gpg-agent
 rupa/z
 Tarrasch/zsh-bd
 zsh-users/zsh-completions
@@ -14,5 +16,6 @@ zsh-users/zsh-autosuggestions
 
 # these should be at last!
 sindresorhus/pure
+#tylerreckart/odin
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search

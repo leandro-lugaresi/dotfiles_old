@@ -32,7 +32,7 @@ The default `EDITOR` right now is `code`, which is Microsoft's OpenSource
 Visual Studio Code editor. You can change that by adding your custom
 override to that variable in `~/.localrc`.
 
-`PROJECTS` is default to `~/Code`. The shortcut to that folder in the shell
+`PROJECTS` is default to `~/dev`. The shortcut to that folder in the shell
 is `c`. You can override this default in `~/.localrc`.
 
 ### Lot's of editors

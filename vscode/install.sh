@@ -12,7 +12,6 @@ if test "$(which code)"; then
 
 	# from `code --list-extensions`
 	modules="
-Borke.puppet
 CoenraadS.bracket-pair-colorizer
 EditorConfig.EditorConfig
 HookyQR.beautify
@@ -29,12 +28,11 @@ lukehoban.Go
 mauve.terraform
 ms-python.python
 patbenatar.advanced-new-file
-rebornix.Ruby
-rust-lang.rust
 sbrink.elm
-shanoor.vscode-nginx
-teabyii.ayu
 timonwong.shellcheck
+dracula-theme.theme-dracula
+eamodio.gitlens
+donjayamanne.githistory
 "
 	for module in $modules; do
 		code --install-extension "$module" || true
