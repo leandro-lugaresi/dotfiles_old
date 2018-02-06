@@ -25,6 +25,9 @@
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab
 	precomposeunicode = true
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
 [apply]
 	whitespace = nowarn
 [help]

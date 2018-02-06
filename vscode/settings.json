@@ -1,5 +1,4 @@
 {
-  "editor.fontSize": 15,
   "editor.rulers": [
     80,
     120
@@ -19,7 +18,7 @@
   "files.trimTrailingWhitespace": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Dracula Soft",
   "window.zoomLevel": 0,
   "extensions.ignoreRecommendations": false,
   "go.coverageDecorator": "gutter",
@@ -35,5 +34,10 @@
   "workbench.editor.showIcons": true,
   "go.testOnSave": false,
   "go.coverOnSave": false,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontFamily": "'Anonymous Pro','Fira Code'",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "'Anonymous Pro','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "git.autofetch": true
 }

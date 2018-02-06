@@ -8,6 +8,7 @@ export PROJECTS="$HOME/dev"
 # your default editor
 export EDITOR='vim'
 export VEDITOR='code'
+export BROWSER='firefox'
 
 # all of our zsh files
 typeset -U config_files
