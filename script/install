@@ -3,6 +3,7 @@
 # Run all dotfiles installers.
 set -e
 
+echo "$(dirname "$0")"/..
 cd "$(dirname "$0")"/..
 
 # find the installers and run them iteratively
