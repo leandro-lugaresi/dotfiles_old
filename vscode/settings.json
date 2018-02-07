@@ -39,5 +39,11 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "terminal.integrated.fontFamily": "'Anonymous Pro','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "git.autofetch": true
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "[php]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+  }
 }
