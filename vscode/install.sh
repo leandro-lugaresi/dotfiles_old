@@ -31,6 +31,7 @@ patbenatar.advanced-new-file
 sbrink.elm
 timonwong.shellcheck
 dracula-theme.theme-dracula
+teabyii.ayu
 eamodio.gitlens
 donjayamanne.githistory
 "

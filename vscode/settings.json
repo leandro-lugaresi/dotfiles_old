@@ -13,10 +13,10 @@
   "extensions.autoUpdate": true,
   "workbench.iconTheme": "ayu",
   "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "solid",
+  "editor.cursorBlinking": "blink",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "files.trimTrailingWhitespace": true,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.renderWhitespace": "boundary",
   "workbench.colorTheme": "Dracula Soft",
   "window.zoomLevel": 0,
@@ -27,8 +27,6 @@
     "**/bower_components": true,
     "/vendor": true
   },
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.fontAliasing": "antialiased",
   "editor.fontWeight": "300",
   "docker.showExplorer": false,
   "workbench.editor.showIcons": true,
@@ -42,8 +40,23 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-r>": false
+  },
+  "vim.easymotion": true,
+  "workbench.startupEditor": "newUntitledFile",
   "[php]": {
     "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "[shellscript]": {
+    "editor.insertSpaces": false,
     "editor.tabSize": 4,
-  }
+  },
+  "explorer.confirmDelete": false
 }
