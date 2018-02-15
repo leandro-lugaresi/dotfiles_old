@@ -12,6 +12,7 @@ if test "$(which code)"; then
 
 	# from `code --list-extensions`
 	modules="
+vscodevim.vim
 CoenraadS.bracket-pair-colorizer
 EditorConfig.EditorConfig
 HookyQR.beautify
@@ -30,10 +31,12 @@ ms-python.python
 patbenatar.advanced-new-file
 sbrink.elm
 timonwong.shellcheck
-dracula-theme.theme-dracula
-teabyii.ayu
 eamodio.gitlens
 donjayamanne.githistory
+WakaTime.vscode-wakatime
+teabyii.ayu
+dracula-theme.theme-dracula
+arcticicestudio.nord-visual-studio-code
 "
 	for module in $modules; do
 		code --install-extension "$module" || true
