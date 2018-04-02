@@ -1,4 +1,6 @@
 Host *
-  ServerAliveInterval 60
+  ServerAliveInterval 240
+# Forward ssh agent to the remote machine.
+ForwardAgent yes
 
 Include ~/.ssh/config.local

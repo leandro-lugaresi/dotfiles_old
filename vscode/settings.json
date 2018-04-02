@@ -19,15 +19,16 @@
   "window.restoreWindows": "none",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 0,
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "off",
   "files.trimTrailingWhitespace": true,
   "go.coverOnSave": false,
-  "go.testOnSave": false,
+  "go.testOnSave": true,
   "go.formatTool": "gofmt",
   "go.coverageDecorator": "gutter",
   "go.formatFlags": ["-s"],
+  "go.buildFlags": ["-v"],
   "workbench.iconTheme": "ayu",
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Ayu Mirage",
   "workbench.editor.showIcons": true,
   "workbench.startupEditor": "none",
   "extensions.ignoreRecommendations": false,
@@ -49,7 +50,9 @@
     "<C-v>": false,
     "<C-f>": false,
     "<C-b>": false,
-    "<C-r>": false
+    "<C-r>": false,
+    "<C-w>": false,
+    "<C-x>": false
   },
   "vim.easymotion": true,
   "[php]": {
@@ -57,7 +60,19 @@
     "editor.tabSize": 4
   },
   "[shellscript]": {
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
     "editor.tabSize": 4,
-  }
+  },
+  "gitlens.keymap": "alternate",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
 }
