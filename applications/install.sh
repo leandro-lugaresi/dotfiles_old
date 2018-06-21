@@ -1,6 +1,7 @@
 #!/bin/sh
 if which yaourt >/dev/null 2>&1; then
 	packages="
+gnome-schedule
 spotify
 ttf-font-awesome
 ttf-freefont
@@ -8,15 +9,12 @@ ttf-google-fonts-typewolf
 vlc
 wget
 franz
-composer
+docker
+docker-compose
+shellcheck
 visual-studio-code-bin
 nodejs
 npm
-php
-php-gd
-php-intl
-php-mcrypt
-php-sqlite
 go
 hub
 vim
@@ -30,3 +28,6 @@ exa
 		yaourt -S --needed --noconfirm "$pkg"
 	done
 fi
+
+sudo usermod -aG docker $USER
+sudo systemctl enable docker

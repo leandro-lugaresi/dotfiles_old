@@ -24,7 +24,9 @@
   "go.coverOnSave": false,
   "go.testOnSave": true,
   "go.formatTool": "gofmt",
-  "go.coverageDecorator": "gutter",
+  "go.coverageDecorator": {
+    "type": "gutter"
+  },
   "go.formatFlags": ["-s"],
   "go.buildFlags": ["-v"],
   "workbench.iconTheme": "ayu",
@@ -66,13 +68,7 @@
   "gitlens.keymap": "alternate",
   "diffEditor.ignoreTrimWhitespace": true,
   "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
+    "suppressLineUncommittedWarning": true,
     "suppressShowKeyBindingsNotice": true
   },
 }
