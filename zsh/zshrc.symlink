@@ -46,3 +46,9 @@ unset config_files updated_at
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
 [ -f ~/.localrc ] && . ~/.localrc
+
+# Adding autocomplete for 'we'
+[ -f ~/.we_autocomplete ] && source ~/.we_autocomplete
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

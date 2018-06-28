@@ -71,4 +71,5 @@
     "suppressLineUncommittedWarning": true,
     "suppressShowKeyBindingsNotice": true
   },
+  "explorer.confirmDelete": false,
 }
