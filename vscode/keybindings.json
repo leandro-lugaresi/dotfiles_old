@@ -3,5 +3,13 @@
     {
         "key": "ctrl+4",
         "command": "workbench.action.terminal.focus"
-    }
+    },
+    {
+        "key": "ctrl+shift+alt+b",
+        "command": "workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
 ]

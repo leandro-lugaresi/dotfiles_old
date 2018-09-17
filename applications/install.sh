@@ -23,6 +23,8 @@ zsh
 diff-so-fancy
 fzf
 exa
+xclip
+peek
 	"
 	for pkg in $packages; do
 		yaourt -S --needed --noconfirm "$pkg"

@@ -4,7 +4,9 @@
     120
   ],
   "editor.tabSize": 4,
+  "editor.insertSpaces": true,
   "editor.trimAutoWhitespace": true,
+  "editor.detectIndentation": false,
   "editor.tabCompletion": true,
   "editor.cursorStyle": "line",
   "editor.renderWhitespace": "boundary",
@@ -21,7 +23,7 @@
   "window.zoomLevel": 0,
   "files.autoSave": "off",
   "files.trimTrailingWhitespace": true,
-  "go.coverOnSave": false,
+  "go.coverOnSave": true,
   "go.testOnSave": true,
   "go.formatTool": "gofmt",
   "go.coverageDecorator": {
@@ -30,7 +32,7 @@
   "go.formatFlags": ["-s"],
   "go.buildFlags": ["-v"],
   "workbench.iconTheme": "ayu",
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Dracula Soft",
   "workbench.editor.showIcons": true,
   "workbench.startupEditor": "none",
   "extensions.ignoreRecommendations": false,
@@ -41,13 +43,13 @@
     "/vendor": true
   },
   "docker.showExplorer": false,
-  "terminal.integrated.fontFamily": "'Anonymous Pro','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font','Anonymous Pro','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "terminal.external.osxExec": "iTerm.app",
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
   "vim.handleKeys": {
-    "<C-d>": true,
+    "<C-d>": false,
     "<C-c>": false,
     "<C-v>": false,
     "<C-f>": false,
@@ -57,19 +59,39 @@
     "<C-x>": false
   },
   "vim.easymotion": true,
-  "[php]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
   },
-  "[shellscript]": {
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "[ruby]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "[vala]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
   },
   "gitlens.keymap": "alternate",
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true,
     "suppressShowKeyBindingsNotice": true
   },
   "explorer.confirmDelete": false,
+  "go.autocompleteUnimportedPackages": true,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "workbench.sideBar.location": "left",
+  "breadcrumbs.enabled": true,
+  "terminal.integrated.setLocaleVariables": true,
+  "vim.sneak": true
 }
