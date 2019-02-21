@@ -32,7 +32,7 @@
   "go.formatFlags": ["-s"],
   "go.buildFlags": ["-v"],
   "workbench.iconTheme": "ayu",
-  "workbench.colorTheme": "Dracula Soft",
+  "workbench.colorTheme": "Activate UMBRA protocol",
   "workbench.editor.showIcons": true,
   "workbench.startupEditor": "none",
   "extensions.ignoreRecommendations": false,

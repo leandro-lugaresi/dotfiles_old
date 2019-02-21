@@ -37,6 +37,7 @@ WakaTime.vscode-wakatime
 teabyii.ayu
 dracula-theme.theme-dracula
 arcticicestudio.nord-visual-studio-code
+max-ss.cyberpunk
 "
 	for module in $modules; do
 		code --install-extension "$module" || true
