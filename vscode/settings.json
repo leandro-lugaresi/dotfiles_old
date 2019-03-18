@@ -31,6 +31,21 @@
   },
   "go.formatFlags": ["-s"],
   "go.buildFlags": ["-v"],
+  "go.lintTool": "golangci-lint",
+  "go.docsTool": "guru",
+  "go.useLanguageServer": true,
+  "go.alternateTools": {
+      "go-langserver": "bingo"
+  },
+  "go.languageServerFlags": [
+      "-enhance-signature-help",
+      "-trace",
+      "-format-style=goimports",
+  ],
+  "go.languageServerExperimentalFeatures": {
+      "format": true,
+      "autoComplete": true
+  },
   "workbench.iconTheme": "ayu",
   "workbench.colorTheme": "Activate UMBRA protocol",
   "workbench.editor.showIcons": true,
@@ -93,5 +108,5 @@
   "workbench.sideBar.location": "left",
   "breadcrumbs.enabled": true,
   "terminal.integrated.setLocaleVariables": true,
-  "vim.sneak": true
+  "vim.sneak": true,
 }
