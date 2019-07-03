@@ -33,6 +33,7 @@ adwaita-icon-theme
 arc-gtk-theme
 arc-icon-theme 
 arc-solid-gtk-theme
+snapd
 	"
 for pkg in $packages; do
 	yaourt -S --needed --noconfirm "$pkg"

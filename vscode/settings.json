@@ -29,24 +29,19 @@
   "go.coverageDecorator": {
     "type": "gutter"
   },
-  "go.formatFlags": ["-s"],
+  "go.formatFlags": ["-s", "-w"],
   "go.buildFlags": ["-v"],
   "go.lintTool": "golangci-lint",
   "go.docsTool": "guru",
   "go.useLanguageServer": true,
-  "go.alternateTools": {
-      "go-langserver": "bingo"
-  },
-  "go.languageServerFlags": [
-      "-enhance-signature-help",
-      "-trace",
-      "-format-style=goimports",
-  ],
   "go.languageServerExperimentalFeatures": {
-      "format": true,
-      "autoComplete": true
+    "diagnostics": true, // for build and vet errors as you type
+    "findReferences": true // for finding in-package references
   },
-  "workbench.iconTheme": "ayu",
+  "gopls": {
+    "usePlaceholders": true // add parameter placeholders when completing a function
+  },
+  "files.eol": "\n", // formatting only supports LF line endings
   "workbench.colorTheme": "Activate UMBRA protocol",
   "workbench.editor.showIcons": true,
   "workbench.startupEditor": "none",
@@ -75,12 +70,18 @@
   },
   "vim.easymotion": true,
   "[go]": {
-    "editor.insertSpaces": false,
     "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.snippetSuggestions": "bottom",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
   "[json]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[yaml]": {
     "editor.insertSpaces": true,
@@ -90,10 +91,6 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
   },
-  "[vala]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-  },
   "gitlens.keymap": "alternate",
   "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.advanced.messages": {
@@ -101,12 +98,62 @@
     "suppressShowKeyBindingsNotice": true
   },
   "explorer.confirmDelete": false,
-  "go.autocompleteUnimportedPackages": true,
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.format": "rubocop",
-  "ruby.intellisense": "rubyLocate",
   "workbench.sideBar.location": "left",
   "breadcrumbs.enabled": true,
   "terminal.integrated.setLocaleVariables": true,
   "vim.sneak": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "terminal.integrated.rendererType": "dom",
+  "cSpell.userWords": [
+    "ECONFLICT",
+    "EINTERNAL",
+    "EINVALID",
+    "ENOTFOUND",
+    "ULID",
+    "empregoligado",
+    "healthcheck",
+    "kiko",
+    "oklog",
+    "whatsapp",
+    "xerrors"
+  ],
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "ruby",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ],
+  "html.format.endWithNewline": true,
+  "graphqlForVSCode.nodePath": "~/dev/js-global/node_modules",
+  "C_Cpp.updateChannel": "Insiders",
+  "C_Cpp.enhancedColorization": "Disabled",
 }
