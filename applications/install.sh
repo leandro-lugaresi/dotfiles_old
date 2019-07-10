@@ -1,5 +1,5 @@
 #!/bin/sh
-if ! (( $(which yay >/dev/null 2>&1) )); then
+if ! (($(which yay >/dev/null 2>&1))); then
 	sudo pacman -S yay
 fi
 packages="
@@ -30,9 +30,10 @@ chromium-widevine
 adapta-gtk-theme
 adwaita-icon-theme
 arc-gtk-theme
-arc-icon-theme 
+arc-icon-theme
 arc-solid-gtk-theme
 snapd
+peek
 	"
 for pkg in $packages; do
 	yay -S --needed --noconfirm "$pkg"
