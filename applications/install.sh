@@ -1,6 +1,6 @@
 #!/bin/sh
-if ! (( $(which yaourt >/dev/null 2>&1) )); then
-	sudo pacman -S yaourt
+if ! (( $(which yay >/dev/null 2>&1) )); then
+	sudo pacman -S yay
 fi
 packages="
 gnome-schedule
@@ -10,7 +10,6 @@ ttf-freefont
 ttf-google-fonts-typewolf
 vlc
 wget
-franz
 docker
 docker-compose
 shellcheck
@@ -36,7 +35,7 @@ arc-solid-gtk-theme
 snapd
 	"
 for pkg in $packages; do
-	yaourt -S --needed --noconfirm "$pkg"
+	yay -S --needed --noconfirm "$pkg"
 done
 sudo usermod -aG docker "$USER"
 sudo systemctl enable docker
