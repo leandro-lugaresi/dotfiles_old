@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/leandro'
 let g:netrw_dirhist_2='/home/leandro/.bundle'
 let g:netrw_dirhist_3='/home/leandro'
+let g:netrw_dirhist_4='/home/leandro/dev/el/kade/bin'
+let g:netrw_dirhist_5='/home/leandro/.dotfiles/antibody'
+let g:netrw_dirhist_6='/home/leandro/Desktop'
+let g:netrw_dirhist_7='/home/leandro/dev/el/entrypoint2'

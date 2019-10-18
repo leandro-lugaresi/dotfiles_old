@@ -7,20 +7,19 @@
   "editor.insertSpaces": true,
   "editor.trimAutoWhitespace": true,
   "editor.detectIndentation": false,
-  "editor.tabCompletion": true,
-  "editor.cursorStyle": "line",
+  "editor.tabCompletion": "on",
   "editor.renderWhitespace": "boundary",
   "editor.cursorBlinking": "blink",
   "editor.minimap.enabled": true,
   "editor.fontWeight": "300",
-  "editor.fontFamily": "'Fira Code','Anonymous Pro'",
+  "editor.fontFamily": "'Cascadia Code Regular','Fira Code','Anonymous Pro'",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
   "window.restoreWindows": "none",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "files.autoSave": "off",
   "files.trimTrailingWhitespace": true,
   "go.coverOnSave": true,
@@ -41,11 +40,10 @@
   "gopls": {
     "usePlaceholders": true // add parameter placeholders when completing a function
   },
-  "files.eol": "\n", // formatting only supports LF line endings
-  "workbench.colorTheme": "Activate UMBRA protocol",
+  "files.eol": "\n",
   "workbench.editor.showIcons": true,
   "workbench.startupEditor": "none",
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": true,
   "search.exclude": {
     "**/node_modules": true,
@@ -153,7 +151,68 @@
     "yml"
   ],
   "html.format.endWithNewline": true,
-  "graphqlForVSCode.nodePath": "~/dev/js-global/node_modules",
-  "C_Cpp.updateChannel": "Insiders",
-  "C_Cpp.enhancedColorization": "Disabled",
+  "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.renderControlCharacters": false,
+  "workbench.colorTheme": "SynthWave '84",
+  "peacock.favoriteColors": [
+    {
+        "name": "Angular Red",
+        "value": "#b52e31"
+    },
+    {
+        "name": "Auth0 Orange",
+        "value": "#eb5424"
+    },
+    {
+        "name": "Azure Blue",
+        "value": "#007fff"
+    },
+    {
+        "name": "C# Purple",
+        "value": "#68217A"
+    },
+    {
+        "name": "Gatsby Purple",
+        "value": "#639"
+    },
+    {
+        "name": "Go Cyan",
+        "value": "#5dc9e2"
+    },
+    {
+        "name": "Java Blue-Gray",
+        "value": "#557c9b"
+    },
+    {
+        "name": "JavaScript Yellow",
+        "value": "#f9e64f"
+    },
+    {
+        "name": "Mandalorian Blue",
+        "value": "#1857a4"
+    },
+    {
+        "name": "Node Green",
+        "value": "#215732"
+    },
+    {
+        "name": "React Blue",
+        "value": "#00b3e6"
+    },
+    {
+        "name": "Something Different",
+        "value": "#832561"
+    },
+    {
+        "name": "Vue Green",
+        "value": "#42b883"
+    }
+  ],
+  "vscode_custom_css.imports": [
+    "file:///home/leandro/.vscode/extensions/robbowen.synthwave-vscode-0.0.7/synthwave84.css"
+  ],
+  "vscode_custom_css.statusbar": true,
+  "vscode_custom_css.policy": true
 }

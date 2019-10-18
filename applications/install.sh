@@ -23,7 +23,9 @@ tmux
 zsh
 diff-so-fancy
 fzf
+bat
 exa
+fd
 xclip
 peek
 chromium-widevine
