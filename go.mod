@@ -1,5 +1,7 @@
 module github.com/leandro-lugaresi/dotfiles
 
+go 1.14
+
 require (
 	github.com/OpenPeeDeeP/depguard v0.0.0-20181229194401-1f388ab2d810 // indirect
 	github.com/StackExchange/wmi v0.0.0-20181212234831-e0a55b97c705 // indirect

@@ -1,6 +1,6 @@
 #!/bin/sh
 if ! (($(which yay >/dev/null 2>&1))); then
-	sudo pacman -S yay
+  sudo pacman -S yay
 fi
 packages="
 gnome-schedule
@@ -36,9 +36,11 @@ arc-icon-theme
 arc-solid-gtk-theme
 snapd
 peek
+yaegi
+rlwrap
 	"
 for pkg in $packages; do
-	yay -S --needed --noconfirm "$pkg"
+  yay -S --needed --noconfirm "$pkg"
 done
 sudo usermod -aG docker "$USER"
 sudo systemctl enable docker
